@@ -1,0 +1,25 @@
+{
+  "short_name": "Simple Web Portal",
+  "name": "SimpleWebPortal is a generic web portal template made with React JS, using Chakra UI, JWT authorization and PostgreSQL database",
+  "icons": [
+    {
+      "src": "starfish-128.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
