@@ -40,5 +40,6 @@
   "Must be a positive number.": "Требуется положительное целое число",
   "Number is too long - should be 5 digits maximum.": "Значение слишком большее - допустимо не более 5 символов",
   "User saved": "Пользователь сохранен",
-  "User deleted": "Пользователь удален"
+  "User deleted": "Пользователь удален",
+  "Account created": "Аккаунт создан"
 }

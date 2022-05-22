@@ -12,6 +12,7 @@ export default function RegisterPage(props) {
       authAction={AuthService.register}
       dstUrl="/profile"
       submitButtonName={"Sign Up"}
+      successMessage="Account created"
     />
   );
 }

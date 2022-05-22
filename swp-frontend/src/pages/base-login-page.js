@@ -13,6 +13,7 @@ import {
   InputGroup,
   InputRightElement,
 } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
@@ -23,11 +24,13 @@ export default function BaseLoginPage({
   authAction,
   dstUrl,
   submitButtonName,
+  successMessage,
 }) {
   const { language, skin } = useContext(AppContext);
   const [showPassword, setShowPassword] = useState(false);
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
+  const toast = useToast();
 
   const handleClick = () => setShowPassword(!showPassword);
 
@@ -87,6 +90,14 @@ export default function BaseLoginPage({
               authAction(values.username, values.password).then(
                 () => {
                   setMessage("");
+                  if (successMessage) {
+                    toast({
+                      description: translate(language, successMessage),
+                      status: "success",
+                      duration: 2500,
+                      isClosable: true,
+                    });
+                  }
                   if (!dstUrl) {
                     navigate(-1);
                   } else {
