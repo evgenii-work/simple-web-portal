@@ -11,3 +11,5 @@ In order to use it:
 
 contact me: email@evgeniii.com
 site: https://evgeniii.com
+
+example (read only with disabled editing)): https://swp.evgeniii.com/
