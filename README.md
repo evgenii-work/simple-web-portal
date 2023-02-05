@@ -9,7 +9,7 @@ In order to use it:
 2. First time start server with "init" arguments: node swp-api/server.js init
 3. Start fronted: npm start
 
-contact me: email@evgeniii.com
+contact me: evgeniii.work@gmail.com
 site: https://evgeniii.com
 
 example (read only with disabled editing)): https://swp.evgeniii.com/
